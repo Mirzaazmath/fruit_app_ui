@@ -55,6 +55,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const   Spacer(),
             Row(
               children: [
                 Expanded(child: Container(
@@ -95,9 +96,9 @@ class HomeScreen extends StatelessWidget {
 
               ],
             ),
-           const  SizedBox(height: 10,),
+         const   Spacer(),
             TextUtil(text: "Popular Items",weight: true,size:18,),
-            const  SizedBox(height: 10,),
+            const   Spacer(),
           Row(
             children: [
               Expanded(child:   GestureDetector(
@@ -129,7 +130,7 @@ class HomeScreen extends StatelessWidget {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  IconButton(onPressed: (){}, icon:const  Icon(Icons.favorite_border)),
+                                  IconButton(onPressed: (){}, icon:  Icon(Icons.favorite,color: T.primaryColor,)),
                                  const SizedBox(height: 70,),
 
                                   TextUtil(text: "Rambutan",weight: true,size: 15,),
@@ -243,9 +244,9 @@ class HomeScreen extends StatelessWidget {
               ),),
             ],
           ),
-            const  SizedBox(height: 20,),
+            const   Spacer(),
             TextUtil(text: "Recent shop",weight: true,size: 20,),
-            const  SizedBox(height: 20,),
+            const   Spacer(),
             Container(
                 height: 100,
                 width: double.infinity,
@@ -306,6 +307,7 @@ class HomeScreen extends StatelessWidget {
 
                 )
             ),
+            const   Spacer(),
 
 
           ],
